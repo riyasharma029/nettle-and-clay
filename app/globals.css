@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FAF6EE;
+  --text-ink: #2B2620;
+  --accent-olive: #4B5D3A;
+  --cta-clay: #D9714E;
+  --card-sand: #EDE3D0;
+}
+
+body {
+  background-color: #FAF6EE;
+  color: #2B2620;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+/* Custom smooth scroll bar styling for organic feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9714E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B85534;
+}
+
+/* Custom organic grain texture background effect */
+.bg-grain {
+  background-image: radial-gradient(rgba(43, 38, 32, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom illustrated badge styling */
+.illustrated-badge {
+  background: rgba(237, 227, 208, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(75, 93, 58, 0.15);
+}
